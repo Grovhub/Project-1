@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFollowObject : MonoBehaviour {
+public class PlayerFollowObject : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject Player;
+
+
+      private void OnTriggerEnter(Collider other)
+      {
+          if (other.gameObject == Player)
+          {
+              Player.transform.parent = transform;
+          }
+      }
+      private void OnTriggerExit(Collider other)
+      {
+          if (other.gameObject == Player)
+          {
+              Player.transform.parent = null;
+          }
+      }
 }
