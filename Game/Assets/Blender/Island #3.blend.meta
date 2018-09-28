@@ -1,22 +1,17 @@
 fileFormatVersion: 2
-guid: 5a9faf31330d43e4ebffe94e7a7943f3
+guid: d0f29ca8f5a74fd4284e748242f2a754
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material_001
+    2100000: Material
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube
     7400000: Default Take
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material_001
-    second: {fileID: 2100000, guid: 10ce8874c0227ba49b6d96856d1cbaf5, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -52,8 +47,8 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
